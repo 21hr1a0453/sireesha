@@ -1,9 +1,20 @@
-class Main{
+import java.util.Scanner;
+class Main
+{
 public static void main(String args[]){
-int[] age={12,4,5};
-System.out.println("Using for-each loop:");
-for(int a:age){
-System.out.println(a);
+Scanner sc=new Scanner(System.in);
+int sum=0,n;
+int a=0;
+int b=1;
+System.out.println("Enter the nth value:");
+n=sc.nextInt();
+System.out.println("Fibonacci series:");
+while(sum<=n)
+{
+System.out.print(sum+" ");
+a=b;
+b=sum;
+sum=a+b;
 }
 }
 }
